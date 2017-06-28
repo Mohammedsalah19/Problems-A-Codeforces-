@@ -1,0 +1,15 @@
+
+            int h,c, n,y=0;
+            n = int.Parse(Console.ReadLine());
+            h = int.Parse(Console.ReadLine());
+            for (int i = 0; i <n; i++)
+            {
+
+                c = int.Parse(Console.ReadLine());
+                if (c>h)
+                {
+                    y ++;
+                }
+                y++;
+            }
+Console.WriteLine(y);
