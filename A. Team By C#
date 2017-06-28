@@ -1,0 +1,13 @@
+ // http://codeforces.com/contest/231/problem/A
+ 
+ int n,c,x = 0;
+            n = int.Parse(Console.ReadLine());
+            for (int i = 0; i < n*3; i++)
+            {
+                c = int.Parse(Console.ReadLine());
+                if (c>0)
+                {
+                    x++; 
+                }
+            }
+            Console.WriteLine(x/3);
