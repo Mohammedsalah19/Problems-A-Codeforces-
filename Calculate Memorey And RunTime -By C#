@@ -1,0 +1,9 @@
+
+ var watch = System.Diagnostics.Stopwatch.StartNew();
+            // the code that you want to measure comes here
+            watch.Stop();
+            var elapsedMs = watch.ElapsedMilliseconds;
+            Console.WriteLine(elapsedMs);
+            long memory = GC.GetTotalMemory(true);
+            Console.WriteLine(memory);
+            Console.ReadKey();
