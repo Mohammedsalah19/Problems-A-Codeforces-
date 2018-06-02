@@ -1,0 +1,43 @@
+
+//A.Infinity_Gauntlet C#
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A.Infinity_Gauntlet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int x = int.Parse(Console.ReadLine());
+             string[] ar = new string[x];
+
+             Dictionary<string, string> stones = new Dictionary<string, string>();
+             stones.Add("Power", "purple");
+             stones.Add("Soul", "orange");
+             stones.Add("Reality", "red");
+             stones.Add("Mind", "yellow");
+             stones.Add("Time", "green");
+             stones.Add("Space", "blue");
+
+            for (int i = 0; i < ar.Length; i++)
+            {
+                ar[i] = Console.ReadLine();
+            }
+            Console.WriteLine(6 - x);
+           foreach (KeyValuePair<string,string> item in stones)
+            {
+                if (!ar.Contains(item.Value))
+                {
+                    Console.WriteLine(item.Key);
+                }
+            }
+
+        }
+    }
+}
