@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A.Bit
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            string x;
+            int z = 0;
+            for (int i = 0; i < n; i++)
+            {
+                x = Console.ReadLine();
+                if (x == "X++"||x=="++X")
+                {
+                    z++;
+                }
+                  else if (x == "--X" || x == "X--")
+                {
+                        --z;
+                }
+            }
+            Console.WriteLine(z);
+        }
+    }
+}
