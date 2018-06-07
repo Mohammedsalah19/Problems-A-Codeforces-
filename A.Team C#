@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A.Team
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int z = 0;
+            int n = int.Parse(Console.ReadLine());
+        ll:
+            int x = 0;
+            int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            for (int i = 0; i < arrxy.Length; i++)
+            {
+                x += arrxy[i];
+            }
+            n--;
+            if (x >= 2)
+            {
+                z++;
+            }
+            if (n > 0)
+            {
+                goto ll;
+            }
+            else
+            {
+                Console.WriteLine(z);
+            }
+        }
+    }
+}
