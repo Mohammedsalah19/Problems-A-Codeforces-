@@ -1,0 +1,29 @@
+//http://codeforces.com/contest/158/problem/A
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A.Next_Round
+{
+    class Program
+    {
+        static void Main(string[] args)
+         {
+             int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+             int[] arr = Console.ReadLine().Split().Select(int.Parse).ToArray(); 
+              int x = 0;
+             for (int j = 0; j < arrxy[0]; j++)
+             {
+                 if ((arr[j] >= arr[arrxy[1] - 1]) && (arr[j] != 0))
+                 {
+                     x++;
+                 }
+             }
+             Console.WriteLine(x);
+        }
+    }
+}
