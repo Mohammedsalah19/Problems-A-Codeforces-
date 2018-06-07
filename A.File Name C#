@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace file_name
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         
+             int n =int.Parse(Console.ReadLine());
+            int b;
+            
+                string x = Console.ReadLine();
+                 b = 0;
+                for (int i = 0; i <n; i++)
+                {
+                    if (i + 2 <= n - 1)
+                    {
+                   
+                     if (x[i] == 'x' && x[i + 1] == 'x' && x[i + 2] == 'x')
+                     {
+                          b++;  
+                      }
+                }
+               
+            }
+            Console.WriteLine(b);
+
+        }
+    }
+}
