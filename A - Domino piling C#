@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A.Domino_piling 
+{
+    class Program
+    {
+        static void Main(string[] args)
+         {
+             int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+             Console.WriteLine((arrxy[0] * arrxy[1]) / 2);
+         }
+    }
+}
+
