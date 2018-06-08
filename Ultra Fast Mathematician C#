@@ -10,7 +10,6 @@ namespace A.Ultra_Fast_Mathematician
     {
         static void Main(string[] args)
         {
-
             string sa = Console.ReadLine();
             string la = Console.ReadLine();
             string[] h = new string[sa.Length];
