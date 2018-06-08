@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Anton_and_Danik
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = int.Parse(Console.ReadLine());
+            string c = Console.ReadLine();
+            int d = 0;
+            int a = 0;
+            for (int i = 0; i < x; i++)
+            {
+                if (c[i] == 'D')
+                {
+                    d++;
+                }
+                else
+                {
+                    a++;
+                }
+            }
+            if (d > a)
+            {
+                Console.WriteLine("Danik");
+            }
+            else if (a > d)
+            {
+                Console.WriteLine("Anton");
+
+            }
+            else
+            {
+                Console.WriteLine("Friendship");
+            }
+        }
+    }
+}
