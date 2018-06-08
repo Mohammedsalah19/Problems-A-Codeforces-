@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A.Ultra_Fast_Mathematician
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string sa = Console.ReadLine();
+            string la = Console.ReadLine();
+            string[] h = new string[sa.Length];
+            for (int i = 0; i < sa.Length; i++)
+            {
+                if (sa[i] == la[i])
+                {
+                   h[i] = "0";
+                }
+                else
+                {
+                    h[i] = "1";
+                }
+            }           
+            Console.WriteLine(string.Concat(h));             
+        }
+    }
+}
