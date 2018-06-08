@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A.Word
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+             int up = 0;
+            int lo = 0;
+            string s = Console.ReadLine();
+
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (char.IsUpper(s[i]))
+                {
+                    up++;
+                }
+                else
+                {
+                    lo++;
+                }
+            }
+            if (up>lo)
+            {
+                Console.WriteLine(s.ToUpper());
+            }
+            else
+            {
+                Console.WriteLine(s.ToLower());
+            }
+      }
+   }
+}
