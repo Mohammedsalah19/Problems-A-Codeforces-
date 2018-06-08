@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Boy_or_Girl
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string c = Console.ReadLine();
+            int s = c.Distinct().Count();
+            if (s%2==0)
+            {
+                 Console.WriteLine("CHAT WITH HER!");
+            }
+            else 
+            {
+                Console.WriteLine("IGNORE HIM!");
+            }
+        }
+    }
+}
