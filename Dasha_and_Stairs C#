@@ -12,7 +12,7 @@ namespace Dasha_and_Stairs
         {
             int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-            if ((arrxy[0] - arrxy[1] == 1 || arrxy[0] - arrxy[1] == -1||arrxy[0]==arrxy[1]) && arrxy[0] != 0 && arrxy[1] != 0)
+            if ((arrxy[0] - arrxy[1] == 1 || arrxy[0] - arrxy[1] == -1||arrxy[0]==arrxy[1]) && arrxy[0] != 0 || arrxy[1] != 0)
             {
                 Console.WriteLine("YES");
             }
