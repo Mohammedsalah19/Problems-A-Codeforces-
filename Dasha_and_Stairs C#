@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Dasha_and_Stairs
+{
+class Program
+    { 
+    static void Main(string[] args)
+        {
+            int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+            if ((arrxy[0] - arrxy[1] == 1 || arrxy[0] - arrxy[1] == -1) && arrxy[0] != 0 && arrxy[1] != 0)
+            {
+                Console.WriteLine("YES");
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
+        }
+    }
+}
