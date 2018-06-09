@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace IQ_test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = int.Parse(Console.ReadLine());
+            int c = 0;
+            int c2 = 0;
+            int odd = 0;
+            int even = 0;
+            int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            for (int i = 0; i < x; i++)
+            {
+                if (arrxy[i]%2==0)
+                {
+                    odd++;
+                    c = i+1;
+                 }
+                else
+                {
+                    c2 = i+1;
+                    even++;
+                }
+            } if (odd==1)
+            {
+                Console.WriteLine(c);
+            }
+            else
+            {
+                Console.WriteLine(c2);
+            }     
+        }
+    }
+}
