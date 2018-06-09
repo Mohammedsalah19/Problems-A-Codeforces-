@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Word_Capitalization 
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string c = Console.ReadLine();
+            Console.WriteLine(c.First().ToString().ToUpper() + c.Substring(1));
+        }
+    }
+}
