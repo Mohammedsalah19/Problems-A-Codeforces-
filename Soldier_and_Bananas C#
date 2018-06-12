@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Soldier_and_Bananas
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int re = 0;
+            for (int i = 1; i <=arrxy[2]; i++)
+            {
+                re += arrxy[0] *i;
+
+            }
+            if (re > arrxy[1])
+            {
+                Console.WriteLine(re - arrxy[1]);
+            }
+            else
+            {
+                Console.WriteLine("0");
+            }
+        }
+    }
+}
