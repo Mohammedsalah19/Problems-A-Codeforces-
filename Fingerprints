@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Fingerprints
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+            int[] arrxy1 = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] arrxy2 = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+            for (int i = 0; i < arrxy1.Length; i++)
+            {
+                for (int k = 0; k < arrxy2.Length; k++)
+                {
+                    if (arrxy1[i] == arrxy2[k])
+                    {
+
+                        Console.Write(arrxy1[i] + " ");
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
