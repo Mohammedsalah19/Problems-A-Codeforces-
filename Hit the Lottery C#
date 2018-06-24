@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hit
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //   int[] arrxy = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int x =int.Parse( Console.ReadLine());
+            int ss = 0, dd = 0;
+ 
+           while (true)
+        	{
+                if (x==1000000000)
+                {
+                    ss = 10000000;
+                    break;
+                }
+
+                if (x == 0)
+                {
+                    break;
+                }
+ 
+                if (x > 100)
+                {
+                    x -= 100;
+                    ss++;
+                    
+                }
+                else if (x>50)
+                {
+                    x -= 50;
+                    ss++;
+                }
+                else if (x > 20 )
+                {
+                    x -= 20;
+                    ss++;
+                } 
+                
+                else if (x > 10 )
+                {
+                    x -= 10;
+                    ss++;
+                }
+                else if (x >5)
+                {
+                    x -= 5;
+                    ss++;
+                }
+               else if (x<5)
+                {
+                    
+                    ss += x;
+                    x = 0;
+                }
+            }
+            Console.WriteLine(ss);
+        }
+    }
+}
